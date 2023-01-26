@@ -106,12 +106,10 @@ app.listen(8080, () => {
     console.log("Inicializando servidor...")
 
     setTimeout(() => {
-        console.log("")
         console.log("Autentificando la conexión...")
     }, 500);
 
     setTimeout(() => {
-        console.log("")
         console.log("login: jpxoi")
     }, 1000);
 
@@ -120,12 +118,10 @@ app.listen(8080, () => {
     }, 1500);
 
     setTimeout(() => {
-        console.log("")
         console.log("Verificando credenciales en la red ARC...")
     }, 2000);
 
     setTimeout(() => {
-        console.log("")
         console.log("Servidor inicializado exitosamente")
     }, 3000);
 })
