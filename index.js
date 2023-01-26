@@ -34,7 +34,7 @@ class Mokepon {
     }
 }
 
-app.get('/join', (req, res) => {
+app.get('/public/join', (req, res) => {
     const id = `${Math.random()}`
 
     const player = new Player(id)
@@ -46,7 +46,7 @@ app.get('/join', (req, res) => {
     res.send(id)
 })
 
-app.post("/mokepon/:playerid", (req, res) => {
+app.post("/public/mokepon/:playerid", (req, res) => {
     const playerid = req.params.playerid || ""
     const name = req.body.mokepon || ""
     const mokepon = new Mokepon(name)
@@ -62,7 +62,7 @@ app.post("/mokepon/:playerid", (req, res) => {
     res.end()
 })
 
-app.post("/mokepon/:playerid/position", (req, res) => {
+app.post("/public/mokepon/:playerid/position", (req, res) => {
     const playerid = req.params.playerid || ""
     const x = req.body.x || 0
     const y = req.body.y || 0
@@ -80,7 +80,7 @@ app.post("/mokepon/:playerid/position", (req, res) => {
     })
 })
 
-app.post("/mokepon/:playerid/attacks", (req, res) => {
+app.post("/public/mokepon/:playerid/attacks", (req, res) => {
     const playerid = req.params.playerid || ""
     const attacks = req.body.attacks || ""
 
@@ -93,7 +93,7 @@ app.post("/mokepon/:playerid/attacks", (req, res) => {
     res.end()
 })
 
-app.get("/mokepon/:playerid/attacks", (req, res) => {
+app.get("/public/mokepon/:playerid/attacks", (req, res) => {
     const playerid = req.params.playerid || ""
     const player = players.find((player) => player.id === playerid)
 
