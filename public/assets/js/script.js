@@ -142,7 +142,7 @@ function startGame() {
 }
 
 function joinGame() {
-    fetch('https://comforting-bienenstitch-24d7a9.netlify.app/public/join')
+    fetch('http://Jean-Pauls-MacBook-Air.local:8080/join')
         .then(function (res) {
             if (res.ok) {
                 res.text()
@@ -179,7 +179,7 @@ function selectPlayerPet() {
 }
 
 function validateMokepon(playerPetName) {
-    fetch(`https://comforting-bienenstitch-24d7a9.netlify.app/public/mokepon/${playerid}`, {
+    fetch(`http://Jean-Pauls-MacBook-Air.local:8080/mokepon/${playerid}`, {
         method: 'POST',
         headers: {
             "Content-Type": "application/json"
@@ -244,7 +244,7 @@ function attackSequence() {
 }
 
 function sendAttacks() {
-    fetch(`https://comforting-bienenstitch-24d7a9.netlify.app/public/mokepon/${playerid}/attacks`, {
+    fetch(`http://Jean-Pauls-MacBook-Air.local:8080/mokepon/${playerid}/attacks`, {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -258,7 +258,7 @@ function sendAttacks() {
 }
 
 function obtainAttacks() {
-    fetch(`https://comforting-bienenstitch-24d7a9.netlify.app/public/mokepon/${enemyid}/attacks`)
+    fetch(`http://Jean-Pauls-MacBook-Air.local:8080/mokepon/${enemyid}/attacks`)
         .then(function (res) {
             if (res.ok) {
                 res.json()
@@ -385,7 +385,7 @@ function drawCanvas() {
 }
 
 function sendPosition(x, y) {
-    fetch(`https://comforting-bienenstitch-24d7a9.netlify.app/public/mokepon/${playerid}/position`, {
+    fetch(`http://Jean-Pauls-MacBook-Air.local:8080/mokepon/${playerid}/position`, {
         method: 'POST',
         headers: {
             "Content-Type": "application/json"
