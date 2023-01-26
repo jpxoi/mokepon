@@ -104,8 +104,16 @@ app.get("/mokepon/:playerid/attacks", (req, res) => {
 
 app.listen(8080, () => {
     console.log("Inicializando servidor...")
-    console.log("Encriptando la conexión...")
-    console.log("Verificando credenciales de la red ARC...")
-    console.log("...")
-    console.log("Servidor funcionando")
+
+    setTimeout(() => {
+        console.log("Encriptando la conexión...")
+    }, 1000);
+
+    setTimeout(() => {
+        console.log("Verificando credenciales de la red ARC...")
+    }, 2500);
+
+    setTimeout(() => {
+        console.log("Servidor funcionando")
+    }, 4000);
 })
