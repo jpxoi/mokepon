@@ -1,0 +1,4 @@
+# mokepon
+Mokepon: multiplayer fighting game. Select unique characters &amp; battle others in real-time. Intuitive controls, special abilities. Perfect for testing skills. This repository has code and assets. Contributions are welcome!
+
+This code is for a JavaScript game that uses the HTML canvas to display the game board and components. The code uses a class Mokepon to create three instances of creatures named hipodoge, capipepo, and ratigueya. The game has different sections (e.g. sectionRestart, sectionSelectPet, etc.) that are displayed or hidden based on the player's progress. The game keeps track of the player's and enemy's selected creatures and their respective attacks. The game also keeps track of the player's and enemy's victories. The canvas object is used to draw the game board and the creatures on it.
