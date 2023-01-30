@@ -9,6 +9,8 @@ The single-player version of this game is available at https://mokepon.jpxoi.com
 
 However, if you prefer to play an offline version of the game, you can download the GitHub code from the serverless branch.
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/2c48cd98-25fb-4a15-8696-b66679e01351/deploy-status)](https://app.netlify.com/sites/mokepon-byjpxoi/deploys)
+
 ## Multiplayer Version
 
 ### Prerequisites
