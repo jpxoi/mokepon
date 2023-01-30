@@ -21,14 +21,20 @@ However, if you prefer to play an offline version of the game, you can download 
 ### Process
 Donwload the GitHub reposity from the main branch, and save it to you preferred folder. Install `NodeJS` from its official website before continuing with the process. Then, open a terminal at the folder where you saved the GitHub repository, and install the `Express Framework` via npm.
 
-`$ npm install express --save`
+```
+$ npm install express --save
+```
 
 Open the `/assets/js/script.js` file with your preferred code editor, and replace the `http://Jean-Pauls-MacBook-Air.local:8080` value, with `http://<yourlocalipaddress>:8080`. To get your local ip adress, open a terminal instance and run the `hostname` (MacOS and Linus) or `ipconfig` (Windows) command. You can also use your hostname, which should look something like this: `<computername>.local`.
 
-Open a new terminal at the main folder, and run one of the following command.
+Open a new terminal at the main folder, and run one of the following commands.
 
-* `npm run start`
-* `npm node index.js`
+```
+npm run start
+```
+```
+npm node index.js
+```
 
 This should initialize the server, and you should be able to access the game from any computer or phone on your local network at `http://<yourlocalipadress>:8080` or at `http://<computername>.local:8080`.
 
