@@ -12,9 +12,9 @@ However, if you prefer to play an offline version of the game, you can download 
 ## Multiplayer Version
 
 ### Prerequisites
-`Code Editor` - Visual Studio Code is recommended, available at https://code.visualstudio.com
-`NodeJS` - Available at https://nodejs.org/en/
-`Express Framework` - Available at https://expressjs.com
+* `Code Editor` - Visual Studio Code is recommended, available at https://code.visualstudio.com
+* `NodeJS` - Available at https://nodejs.org/en/
+* `Express Framework` - Available at https://expressjs.com
 
 ### Process
 Donwload the GitHub reposity from the main branch, and save it to you preferred folder. Install `NodeJS` from its official website before continuing with the process. Then, open a terminal at the folder where you saved the GitHub repository, and install the `Express Framework` via npm.
@@ -25,8 +25,8 @@ Open the `/assets/js/script.js` file with your preferred code editor, and replac
 
 Open a new terminal at the main folder, and run one of the following command.
 
-`npm run start`
-`npm node index.js`
+* `npm run start`
+* `npm node index.js`
 
 This should initialize the server, and you should be able to access the game from any computer or phone on your local network at `http://<yourlocalipadress>:8080` or at `http://<computername>.local:8080`.
 
