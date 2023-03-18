@@ -23,14 +23,14 @@ However, if you prefer to play an offline version of the game, you can download 
 
 ### Process
 
-To propperly install the multiplayer version of this game perform the following instructions.
+To properly install the multiplayer version of this game perform the following instructions.
 
-1. Donwload the `Source code.zip` file of your preferred multiplayer version from [here](https://github.com/jpxoi/mokepon/releases), and save it to you preferred folder.
+1. Download the `Source code.zip` file of your preferred multiplayer version from [here](https://github.com/jpxoi/mokepon/releases), and save it to your preferred folder.
 2. Install `NodeJS` from its official website before continuing with the process.
-3. Open a terminal at the folder where you saved the GitHub repository, and install the `Express Framework` via npm with `$ npm install express --save`
+3. Open a terminal in the folder where you saved the GitHub repository, and install the `Express Framework` via npm with `$ npm install express --save`
 4. Open the `/assets/js/script.js` file with your preferred code editor, and replace the `http://Jean-Pauls-MacBook-Air.local:8080` value, with `http://<yourlocalipaddress>:8080`.
-  * To get your local ip adress, open a terminal instance and run the `hostname` (MacOS and Linus) or `ipconfig` (Windows) command. You can also use your hostname, which should look something like this: `<computername>.local`.
-5. Open a new terminal at the main folder, and run one of the following commands.
+  * To get your local IP address, open a terminal instance and run the `hostname` (MacOS and Linus) or `ipconfig` (Windows) command. You can also use your hostname, which should look like `<computername>.local`.
+5. Open a new terminal in the main folder, and run one of the following commands.
 ```
 $ npm run start
 $ npm node index.js
