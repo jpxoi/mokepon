@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@300&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #041562;
+    color: #FFFFFF;
+}
+
+#select-pet {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+}
+
+.title {
+    font-family: 'Fredoka One', cursive;
+    font-size: 32px;
+}
+
+.subtitle {
+    font-size: 20px;
+}
+
+.cards, .attacks {
+    display: flex;
+    gap: 10px;
+}
+
+.card-mokepon {
+    width: 180px;
+    height: 100px;
+    background: #11468F;
+    padding: 10px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transition: all 0.1s;
+}
+
+.card-mokepon:hover {
+    border: 1px solid #FFF;
+    cursor: pointer;
+}
+
+.card-mokepon img {
+    width: 100px;
+}
+
+#button-pet-select {
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 30px;
+    transition: all 0.3s;
+}
+
+#button-pet-select:hover {
+    background: #11468F;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+input {
+    display: none;
+}
+
+input:checked + label {
+    background-color: #5D8BF4;
+}
+
+#select-attack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.3s;
+}
+
+.attack-button {
+    background-color: #11468F;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border-color: transparent;
+    width: 80px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.attack-button:hover {
+    background-color: #5D8BF4;
+    cursor: pointer;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.footer-container .footer-caption {
+    font-size: 14px;
+    text-align: center;
+}
+
+.footer-container .footer-caption a {
+    text-decoration: none;
+    color: #FFF;
+    transition: 0.3s ease;
+}
+
+.footer-container .footer-caption a:hover {
+    color: #2a7ff6;
+    transition: 0.3s ease;
+}
+
+#announcements {
+    width: 280px;
+    background: #EEEEEE;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #000;
+}
+
+#button-restart {
+    border: none;
+    color: #11468F; 
+    font-family: 'Poppins', sans-serif;
+    background-color: #EEEEEE;
+}
+
+#button-restart:hover {
+    color: #041562;
+}
+
+.scores {
+    display: grid;
+    grid-template-columns: repeat(2, 100px);
+    text-align: center;
+}
+
+#player-victories, #enemy-victories {
+    font-size: 32px;
+    margin-bottom: 0;
+}
+
+.scores-player, .scores-enemy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.3s;
+}
+
+#view-map {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+}
+
+#view-map button {
+    width: 80px;
+    height: 40px;
+    border-radius: 20px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin: 5px 2px;
+    user-select: none;
+}
+
+#view-map button:hover {
+    background: #11468F;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+@media (max-width: 542px) {
+    .cards, .attacks {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 300px) {
+    #view-map button {
+        width: 50px;
+    }
+
+
+}
